@@ -1,4 +1,4 @@
-# Red Dog
+# RedDog
 Yablon, also known as red dog, is a game of chance played with cards.
 This was one of my first projects built with an interactive GUI.
 

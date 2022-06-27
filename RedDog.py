@@ -616,7 +616,7 @@ def userClickPass():
     lblBet.set("Enter Your Bet:")
     userBet.set(value = "0")
 
-    if not (purse == 0):
+    if purse != 0:
         buttonBet.config(state = "active")
     else:
         buttonBet.config(state = "disabled")

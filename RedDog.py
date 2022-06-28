@@ -555,7 +555,7 @@ def userClickAdditionalBet():
 
         lblTitle.set("You have chose to bet an additional $" + str(additionalBetAmount) + ".")
         thirdCard = getThirdCard(playerHand)
-        if (between(playerHand, thirdCard) == True):
+        if (between(playerHand, thirdCard)):
             purse = purse + totalBet * payout(playerHand)
             lblCardInfo.set("Your third card was in between your first two cards... You have just won $" + str(totalBet * payout(playerHand)) + "!")
             wins += 1
@@ -597,7 +597,7 @@ def userClickPass():
     lblTitle.set("You have skipped on the additional bet.")
     thirdCard = getThirdCard(playerHand)
     
-    if (between(playerHand, thirdCard) == True):
+    if (between(playerHand, thirdCard)):
         purse = purse + betAmount * payout(playerHand)
         lblCardInfo.set("Your third card was in between your first two cards... You have just won $" + str(betAmount * payout(playerHand)) + "!")
         wins += 1
